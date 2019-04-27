@@ -62,7 +62,6 @@ p <- baseball_league1 %>%
   gather("Season", "average_hit", -Player) %>% 
   ggplot(aes(Season,average_hit, group = Player))+
   geom_point(aes(color = Player))+
-  geom_line(aes(color = Player))+
   theme_classic()+
   theme(panel.border=element_blank(),
         axis.line.y  = element_line(), 
